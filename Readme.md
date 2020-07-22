@@ -2,8 +2,32 @@ CMake Project Base
 ================================================================================
 
 This repository contains a bare-bones CMake project to quick-start a new C++
-project. It takes care of some CTest integrations in order to start working on
-new projects faster.
+project. It takes care of some tedious integrations that often need to be set up
+for new projects.
+
+Clang-Format Integration
+--------------------------------------------------------------------------------
+
+The project comes with a `.clang-format` file preconfigured. This file can be
+used as is, or replaced with a different file, depending on the style that needs
+to be followed in the project.
+
+To run `clang-format` automatically on all targets that are defined by this
+project, type:
+
+	$ make format
+
+This will print a warning of all the areas of the code that are nonconforming.
+Caveat: this only works for source files, not header files.
+
+In order for this to work, you need to add executables and libraries with the
+functions `cwrap_executable` and `cwrap_library`. These work exactly the same as
+pure CMake `add_executable` and `add_library`, but also register their source
+files for the `make format` command.
+
+Note that the `format` target is made available by the call to
+`include(format)`. This needs to be done after all targets have been declared,
+otherwise some will be skipped in the call to `make format`.
 
 CTest Integrations
 --------------------------------------------------------------------------------
