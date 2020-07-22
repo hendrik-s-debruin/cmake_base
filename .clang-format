@@ -1,0 +1,153 @@
+---
+# ==============================================================================
+# General
+# ==============================================================================
+AlignTrailingComments:             true
+AlwaysBreakBeforeMultilineStrings: false
+BreakBeforeTernaryOperators:       false
+BreakStringLiterals:               true
+ColumnLimit:                       80
+ContinuationIndentWidth:           4
+DeriveLineEnding:                  false
+IndentPPDirectives:                BeforeHash
+IndentWidth:                       4
+InsertTrailingCommas:              None
+MaxEmptyLinesToKeep:               1
+SortUsingDeclarations:             true
+Standard:                          Latest
+TabWidth:                          4
+UseCRLF:                           false
+UseTab:                            ForIndentation
+
+# ==============================================================================
+# Declarations
+# ==============================================================================
+AlignConsecutiveAssignments:  true
+AlignConsecutiveBitFields:    false
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros:       true
+AlignEscapedNewlines:         Left
+BitFieldColonSpacing:         After
+
+# ==============================================================================
+# Statements
+# ==============================================================================
+AlignOperands: true
+
+# ==============================================================================
+# Functions
+# ==============================================================================
+AlignAfterOpenBracket:                     Align
+AllowAllArgumentsOnNextLine:               false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine:          Empty
+AllowShortLambdasOnASingleLine:            All
+AlwaysBreakAfterReturnType:                All
+BinPackArguments:                          false
+BinPackParameters:                         false
+IndentWrappedFunctionNames:                true
+SpaceInEmptyParens:                        false
+
+# ==============================================================================
+# Classes
+# ==============================================================================
+AccessModifierOffset:                           -4
+AllowAllConstructorInitializersOnNextLine:      false
+BreakConstructorInitializers:                   AfterColon
+BreakInheritanceList:                           AfterColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth:              4
+SpaceBeforeCtorInitializerColon:                false
+SpaceBeforeInheritanceColon:                    true
+
+# ==============================================================================
+# Blocks
+# ==============================================================================
+AllowShortBlocksOnASingleLine:       Empty
+AllowShortCaseLabelsOnASingleLine:   false
+AllowShortEnumsOnASingleLine:        true
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine:        false
+CompactNamespaces:                   false
+Cpp11BracedListStyle:                true
+IndentCaseLabels:                    true
+IndentExternBlock:                   Indent
+IndentGotoLabels:                    true
+KeepEmptyLinesAtTheStartOfBlocks:    false
+NamespaceIndentation:                All
+SpaceInEmptyBlock:                   true
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel:        true
+  AfterClass:            true
+  AfterControlStatement: Always
+  AfterEnum:             true
+  AfterFunction:         true
+  AfterNamespace:        true
+  AfterStruct:           true
+  AfterUnion:            true
+  AfterExternBlock:      true
+  BeforeCatch:           false
+  BeforeElse:            false
+  BeforeLambdaBody:      false
+  BeforeWhile:           false
+  SplitEmptyFunction:    false
+  SplitEmptyRecord:      false
+  SplitEmptyNamespace:   false
+
+# ==============================================================================
+# Templates
+# ==============================================================================
+AlwaysBreakTemplateDeclarations: Yes
+SpaceAfterTemplateKeyword:       false
+
+# ==============================================================================
+# Pointers
+# ==============================================================================
+DerivePointerAlignment: false
+PointerAlignment:       Right
+
+# ==============================================================================
+# Comments
+# ==============================================================================
+FixNamespaceComments:        true
+ReflowComments:              true
+SpaceBeforeTrailingComments: 1
+
+# ==============================================================================
+# Include Order
+# ==============================================================================
+SortIncludes: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  # stdlib
+  - Regex: '^<[a-zA-Z\-]*>$'
+    Priority: -100 # most important
+  # installed libraries
+  - Regex: '^<[a-zA-Z\-]*\/'
+    Priority: -50
+
+# IncludeIsMainRegex:
+# IncludeIsMainSourceRegex:
+
+# ==============================================================================
+# Operators
+# ==============================================================================
+SpaceAfterLogicalNot:              false
+SpaceAterCStyleCast:               false
+SpaceBeforeAssignmentOperators:    true
+SpaceBeforeCpp11BracedList         : false
+SpaceBeforeParens:                 Never
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceBeforeSquareBrackets:         false
+
+# ==============================================================================
+# Bracketing Styles
+# ==============================================================================
+SpaceInAngles:                false
+SpaceInConditionalStatement:  false
+SpaceInContainerLiterals:     false
+SpaceInCStyleCastParentheses: false
+SpaceInParentheses:           false
+SpaceInSquareBrackets:        false
