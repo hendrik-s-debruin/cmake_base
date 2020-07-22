@@ -11,7 +11,7 @@ ContinuationIndentWidth:           4
 DeriveLineEnding:                  false
 IndentPPDirectives:                BeforeHash
 IndentWidth:                       4
-InsertTrailingCommas:              None
+# InsertTrailingCommas:              None
 MaxEmptyLinesToKeep:               1
 SortUsingDeclarations:             true
 Standard:                          Latest
@@ -23,11 +23,11 @@ UseTab:                            ForIndentation
 # Declarations
 # ==============================================================================
 AlignConsecutiveAssignments:  true
-AlignConsecutiveBitFields:    false
+# AlignConsecutiveBitFields:    false
 AlignConsecutiveDeclarations: true
 AlignConsecutiveMacros:       true
 AlignEscapedNewlines:         Left
-BitFieldColonSpacing:         After
+# BitFieldColonSpacing:         After
 
 # ==============================================================================
 # Statements
@@ -42,11 +42,11 @@ AllowAllArgumentsOnNextLine:               false
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowShortFunctionsOnASingleLine:          Empty
 AllowShortLambdasOnASingleLine:            All
-AlwaysBreakAfterReturnType:                All
+# AlwaysBreakAfterReturnType:                All
 BinPackArguments:                          false
 BinPackParameters:                         false
 IndentWrappedFunctionNames:                true
-SpaceInEmptyParens:                        false
+# SpaceInEmptyParens:                        false
 
 # ==============================================================================
 # Classes
@@ -65,13 +65,13 @@ SpaceBeforeInheritanceColon:                    true
 # ==============================================================================
 AllowShortBlocksOnASingleLine:       Empty
 AllowShortCaseLabelsOnASingleLine:   false
-AllowShortEnumsOnASingleLine:        true
+# AllowShortEnumsOnASingleLine:        true
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine:        false
 CompactNamespaces:                   false
 Cpp11BracedListStyle:                true
 IndentCaseLabels:                    true
-IndentExternBlock:                   Indent
+# IndentExternBlock:                   Indent
 IndentGotoLabels:                    true
 KeepEmptyLinesAtTheStartOfBlocks:    false
 NamespaceIndentation:                All
@@ -90,8 +90,8 @@ BraceWrapping:
   AfterExternBlock:      true
   BeforeCatch:           false
   BeforeElse:            false
-  BeforeLambdaBody:      false
-  BeforeWhile:           false
+  # BeforeLambdaBody:      false
+  # BeforeWhile:           false
   SplitEmptyFunction:    false
   SplitEmptyRecord:      false
   SplitEmptyNamespace:   false
@@ -113,7 +113,7 @@ PointerAlignment:       Right
 # ==============================================================================
 FixNamespaceComments:        true
 ReflowComments:              true
-SpaceBeforeTrailingComments: 1
+# SpaceBeforeTrailingComments: 1
 
 # ==============================================================================
 # Include Order
@@ -135,7 +135,7 @@ IncludeCategories:
 # Operators
 # ==============================================================================
 SpaceAfterLogicalNot:              false
-SpaceAterCStyleCast:               false
+# SpaceAterCStyleCast:               false
 SpaceBeforeAssignmentOperators:    true
 SpaceBeforeCpp11BracedList         : false
 SpaceBeforeParens:                 Never
@@ -145,9 +145,9 @@ SpaceBeforeSquareBrackets:         false
 # ==============================================================================
 # Bracketing Styles
 # ==============================================================================
-SpaceInAngles:                false
-SpaceInConditionalStatement:  false
-SpaceInContainerLiterals:     false
-SpaceInCStyleCastParentheses: false
-SpaceInParentheses:           false
-SpaceInSquareBrackets:        false
+# SpaceInAngles:                false
+# SpaceInConditionalStatement:  false
+# SpaceInContainerLiterals:     false
+# SpaceInCStyleCastParentheses: false
+# SpaceInParentheses:           false
+# SpaceInSquareBrackets:        false
