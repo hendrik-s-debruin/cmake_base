@@ -6,7 +6,6 @@ include(targets)
 
 
 include_directories(include)
-cwrap_executable(tester src/test.cpp)
 
 include(CTest)
 add_subdirectory(test)

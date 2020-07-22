@@ -10,3 +10,8 @@ add_custom_target(format
 	COMMAND clang-format --dry-run ${SOURCE_LIST}
 	WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
 )
+
+add_custom_target(format-force-inplace
+	COMMAND clang-format -i ${SOURCE_LIST}
+	WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+)

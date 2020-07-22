@@ -29,6 +29,14 @@ Note that the `format` target is made available by the call to
 `include(format)`. This needs to be done after all targets have been declared,
 otherwise some will be skipped in the call to `make format`.
 
+If you want to run the auto-formatting on all the code and not just print out
+the warnings, type:
+
+	$ make format-force-inplace
+
+Note that this will overwrite your source files. Be sure to commit any changes
+before running this.
+
 CTest Integrations
 --------------------------------------------------------------------------------
 
