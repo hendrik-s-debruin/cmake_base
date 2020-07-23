@@ -37,6 +37,12 @@ the warnings, type:
 Note that this will overwrite your source files. Be sure to commit any changes
 before running this.
 
+Clang-Tidy Integration
+--------------------------------------------------------------------------------
+
+A preconfigured `.clang-tidy` file is provided. `clang-tidy` is run
+automatically on each compilation.
+
 CTest Integrations
 --------------------------------------------------------------------------------
 
