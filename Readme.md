@@ -43,6 +43,11 @@ Clang-Tidy Integration
 A preconfigured `.clang-tidy` file is provided. `clang-tidy` is run
 automatically on each compilation.
 
+Include-What-You-Use Integration
+--------------------------------------------------------------------------------
+
+CMake will automatically run `include-what-you-use` on each compilation.
+
 CTest Integrations
 --------------------------------------------------------------------------------
 
