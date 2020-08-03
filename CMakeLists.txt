@@ -13,6 +13,12 @@ endif()
 set(CMAKE_C_INCLUDE_WHAT_YOU_USE   ${iwyu})
 set(CMAKE_CXX_INCLUDE_WHAT_YOU_USE ${iwyu})
 
+# Find cmake-format
+find_program(cmake_format NAMES cmake-format)
+if(NOT cmake_format)
+	message(FATAL_ERROR "Could not find the program 'cmake-format'")
+endif()
+
 # Add module path
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
