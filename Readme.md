@@ -5,6 +5,12 @@ This repository contains a bare-bones CMake project to quick-start a new C++
 project. It takes care of some tedious integrations that often need to be set up
 for new projects.
 
+Githooks
+--------------------------------------------------------------------------------
+
+Custom git hooks can be placed in the `githooks` directory. `.git/hooks` will
+link to this directory.
+
 Clang-Format Integration
 --------------------------------------------------------------------------------
 
