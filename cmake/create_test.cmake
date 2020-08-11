@@ -39,7 +39,7 @@ include(Catch)
 # Dependencies for All Tests
 # ==============================================================================
 add_custom_target(tests)
-add_library(catch2 EXCLUDE_FROM_ALL SHARED lib/catch.cpp)
+add_library(catch2 EXCLUDE_FROM_ALL SHARED ${PROJECT_SOURCE_DIR}/lib/catch.cpp)
 add_dependencies(tests catch2)
 add_custom_target(check DEPENDS tests COMMAND ${CMAKE_CTEST_COMMAND})
 
