@@ -70,7 +70,7 @@ with section("format"):
   max_rows_cmdline = 2
 
   # How many spaces to tab for indent
-  tab_size = 2
+  tab_size = 4
 
   # Format keywords consistently as 'lower' or 'upper' case
   keyword_case = u'unchanged'

@@ -8,34 +8,12 @@ for new projects.
 Clang-Format Integration
 --------------------------------------------------------------------------------
 
-The project comes with a `.clang-format` file preconfigured. This file can be
-used as is, or replaced with a different file, depending on the style that needs
-to be followed in the project.
+Clang-Format is preconfigured, but is not currently integrated into the project
 
-To run `clang-format` automatically on all targets that are defined by this
-project, type:
+CMake-Format Integration
+--------------------------------------------------------------------------------
 
-	$ make format
-
-This will print a warning of all the areas of the code that are nonconforming.
-Caveat: this only works for source files, not header files.
-
-In order for this to work, you need to add executables and libraries with the
-functions `cwrap_executable` and `cwrap_library`. These work exactly the same as
-pure CMake `add_executable` and `add_library`, but also register their source
-files for the `make format` command.
-
-Note that the `format` target is made available by the call to
-`include(format)`. This needs to be done after all targets have been declared,
-otherwise some will be skipped in the call to `make format`.
-
-If you want to run the auto-formatting on all the code and not just print out
-the warnings, type:
-
-	$ make format-force-inplace
-
-Note that this will overwrite your source files. Be sure to commit any changes
-before running this.
+CMake-Foramt is preconfigured, but is not currently integrated into the project
 
 Clang-Tidy Integration
 --------------------------------------------------------------------------------
