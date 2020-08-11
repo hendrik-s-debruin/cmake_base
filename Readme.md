@@ -90,3 +90,16 @@ All the tests corresponding to a given tag name can be built using:
 Again, to build and run these tests in one go, simply type:
 
 	$ make check_<TAG_NAME>
+
+Doxygen Integration
+--------------------------------------------------------------------------------
+
+To build the documentation, call
+
+```txt
+make doc
+```
+
+Using the stub indside of `doc`, multiple documentation targets can be built up
+easily. Simply specify the doxygen settings as shown in the example and add a
+custom target for the new documentation version.

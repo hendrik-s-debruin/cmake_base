@@ -30,3 +30,7 @@ include(CTest)
 add_subdirectory(test)
 
 include(format)
+
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+	add_subdirectory(doc)
+endif()
