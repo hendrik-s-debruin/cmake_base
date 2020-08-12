@@ -79,5 +79,6 @@ make doc
 ```
 
 Using the stub indside of `doc`, multiple documentation targets can be built up
-easily. Simply specify the doxygen settings as shown in the example and add a
-custom target for the new documentation version.
+easily. Simply specify the Doxygen settings as shown in the example and add a
+custom target for the new documentation version. To define a list for Doxygen,
+simply use the provided `add_doxygen_values` macro.
