@@ -27,7 +27,7 @@ endif()
 macro(add_doxygen_values key)
 	# =============================== Parse Input ==============================
 	set(prefix        add_doxygen_value )
-	set(noValues      OVERWRITE         ) # unused
+	set(noValues      OVERWRITE         )
 	set(singleValues                    ) # unused
 	set(multiValues   VALUES            )
 
@@ -40,10 +40,7 @@ macro(add_doxygen_values key)
 
 	# ========================== Clear Key If Required =========================
 	if(${${prefix}_OVERWRITE})
-		message(STATUS "overwriting")
 		set(${key} "")
-	else()
-		message(STATUS "not overwriting")
 	endif()
 
 	# ========================== Append Values to Key ==========================
