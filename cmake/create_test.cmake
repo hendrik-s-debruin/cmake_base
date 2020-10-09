@@ -33,14 +33,13 @@
 # 'make check_${TAG}'. This will build all the tests that match the tag and run
 # them.
 
-find_package(Catch2 REQUIRED)
-include(Catch)
 # ==============================================================================
 # Dependencies for All Tests
 # ==============================================================================
 add_custom_target(tests)
-add_library(catch2 EXCLUDE_FROM_ALL SHARED ${PROJECT_SOURCE_DIR}/lib/catch.cpp)
-add_dependencies(tests catch2)
+add_library(catch_main EXCLUDE_FROM_ALL SHARED ${PROJECT_SOURCE_DIR}/lib/catch.cpp)
+target_link_libraries(catch_main PRIVATE Catch2::Catch2)
+add_dependencies(tests catch_main)
 add_custom_target(check DEPENDS tests COMMAND ${CMAKE_CTEST_COMMAND})
 
 # ==============================================================================
@@ -95,7 +94,7 @@ function(create_test TARGET_NAME)
 	# =============================== Create Test ==============================
 	message(STATUS "Adding test '${TARGET_NAME}'")
 	add_executable(${TARGET_NAME} EXCLUDE_FROM_ALL ${${prefix}_SOURCE})
-	target_link_libraries(${TARGET_NAME} ${${prefix}_LINK} catch2)
+	target_link_libraries(${TARGET_NAME} ${${prefix}_LINK} catch_main)
 	catch_discover_tests(${TARGET_NAME} TEST_PREFIX ${TEST_TAGNAME})
 
 	# =========================== Setup Dependencies ===========================
