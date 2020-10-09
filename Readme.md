@@ -19,12 +19,25 @@ Clang-Tidy Integration
 --------------------------------------------------------------------------------
 
 A preconfigured `.clang-tidy` file is provided. `clang-tidy` is run
-automatically on each compilation.
+automatically on each compilation. This can be set with the cache variable
+`EXTRA_COMPILATION_CHECKS_CLANG_TIDY`. Consider setting this to `OFF` during
+active development cycles by typing in the build directory:
+
+	ccmake ..
+
+Or by modifying `CMakeCache.txt`.
 
 Include-What-You-Use Integration
 --------------------------------------------------------------------------------
 
-CMake will automatically run `include-what-you-use` on each compilation.
+CMake will automatically run `include-what-you-use` on each compilation. This
+can be set with the cache variable `EXTRA_COMPILATION_CHECKS_CLANG_IWYU`.
+Consider setting this to `OFF` during active development cycles typing in the
+build directory:
+
+	ccmake ..
+
+Or by modifying `CMakeCache.txt`.
 
 CTest Integrations
 --------------------------------------------------------------------------------
