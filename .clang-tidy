@@ -1,4 +1,15 @@
-Checks: 'bugprone-*,cert-*,clang-analyzer-*,cppcoreguidelines-*,hicpp-*,misc-*,modernize-*,mpi-*,performance-*,portability-*,readability-*'
+Checks: >
+  'bugprone-*,
+  cert-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  hicpp-*,
+  misc-*,
+  modernize-*,
+  mpi-*,
+  performance-*,
+  portability-*,
+  readability-*'
 
 CheckOptions:
   # ============================================================================
