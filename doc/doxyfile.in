@@ -2,7 +2,7 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "OSAL"
+PROJECT_NAME           = @PROJECT_NAME@
 PROJECT_NUMBER         = @CMAKE_PROJECT_VERSION@
 PROJECT_BRIEF          = "@DOXYGEN_PROJECT_BRIEF@"
 PROJECT_LOGO           =
