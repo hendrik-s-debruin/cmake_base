@@ -36,9 +36,10 @@
 # ==============================================================================
 # Dependencies for All Tests
 # ==============================================================================
+include(Catch)
 add_custom_target(tests)
 add_library(catch_main EXCLUDE_FROM_ALL SHARED ${PROJECT_SOURCE_DIR}/lib/catch.cpp)
-target_link_libraries(catch_main PRIVATE Catch2::Catch2)
+target_link_libraries(catch_main PUBLIC Catch2::Catch2)
 add_dependencies(tests catch_main)
 add_custom_target(check DEPENDS tests COMMAND ${CMAKE_CTEST_COMMAND})
 
