@@ -121,17 +121,23 @@ ReflowComments:              true
 SortIncludes: true
 IncludeBlocks: Regroup
 IncludeCategories:
-  # local headers
-  - Regex: '"[a-zA-Z\-_]*.(hpp|h|tpp)"'
+  # local C headers
+  - Regex: '"[a-zA-Z0-9\-_/]+.h"'
+    Priority: 1
+  # local CPP headers
+  - Regex: '"[a-zA-Z0-9\-_/]+.(hpp|tpp)"'
     Priority: 2
-  # installed C libraries
-  - Regex: '^<[a-zA-Z\-_]*.h>$'
-    Priority: 3
-  # intalled C++ libraries
-  - Regex: '^<[a-zA-Z\-_]*.hpp>$'
-    Priority: 4
+  # stdlib C
+  - Regex: '^<[a-zA-Z\-_]+.h>$'
+    Priority: 6
   # stdlib
-  - Regex: '^<[a-zA-Z\-_]*>$'
+  - Regex: '^<[a-zA-Z\-_]+>$'
+    Priority: 7
+  # installed C libraries
+  - Regex: '^<[a-zA-Z0-9\-_/]+.h>$'
+    Priority: 5
+  # intalled C++ libraries
+  - Regex: '^<[a-zA-Z0-9\-_/]+.hpp>$'
     Priority: 5
 
 # IncludeIsMainRegex:
